@@ -12,11 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="top-header">
         <ul class="menu-header">
             <li class="item-header"><a href="#main-div">Início</a></li>
             <li class="item-header"><a id="sobre" href="#about" >Sobre</a></li>
-            <li class="item-header"><a href="./projetos.html" target="_blank">Projetos</a></li>
+            <li class="item-header"><a href="#project" >Projetos</a></li>
         </ul>
     </header>
     <div class="header-toggle">
@@ -31,7 +31,7 @@
                     <div class="info-top">
                         <div class="text">
                             <p>
-                                <span class="title">Lucas Cavalheiro De Godoy Ribeiro</span> <br>
+                                <span class="name-title">Lucas Cavalheiro De Godoy Ribeiro</span> <br>
                                 <span class="resume">Estudante de Engenharia de Software | Auxiliar de produção</span>
                             </p>
                             <p class="text-resume">
@@ -54,7 +54,7 @@
         <div id="about">
             
             <div class="formation">
-                <span class="formation-title">FORMAÇÃO</span>
+                <span class="formation-title title">FORMAÇÃO</span>
                 <div class="formation-item">
                     <p><span><a href="https://www.unibrasil.com.br/cursos/graduacao/escola-politecnica/engenharia-de-software/" target="_blank">Curso Superior Engenharia de Software</a></span> <br>
                         Local: Unibrasil, conclusão 2025
@@ -69,7 +69,7 @@
             </div>
         
             <div class="experience">
-                <span class="experience-title">EXPERIÊNCIA</span>
+                <span class="experience-title title">EXPERIÊNCIA</span>
                 <div class="experience-item">            
                     <p>
                         <a href="https://www.grupoindusparquet.com.br/marca/masterpiso" target="_blank"><span>Auxiliar de produção(atual)</span> <br></a>
@@ -88,7 +88,7 @@
             </div>
                
 
-            <span class="curse-title">CURSOS COMPLEMENTARES</span>
+            <span class="curse-title title">CURSOS COMPLEMENTARES</span>
             <div class="curse">
                 <ul>
                     <div class="line-1">
@@ -130,39 +130,31 @@
             </div>
         </div>
 
-        <div class="projects">
-            <div class="project-item">
-                <div class="project-card">
-                    <div class="project-title">
-                        <h3>Project-1</h3>
-                    </div>
-                    <div class="project-card-image">
-                        <img src="./imgs/Project_Caixa-Fruits.png" alt="">
-                    </div>
-                    <div class="project-description">
-                        <p>
-                            Projeto idealizado com base nos conhecimentos adquiridos no 
-                            segundo semestre do curso técnico de desenvolvimento de sistemas <br>
-Consiste em um aplicativo que simula basicamente o funcionamento de uma caixa registradora , 
-registrando os dados processados em arquivos .txt, 
-a persistência dos dados é armazenada na área de trabalho do usúario em uma 
-pasta criada pelo app chamada "Arquivos"
-                        </p>
+        <div id="project" class="projects">
+            <h2 class="projects-title title">PROJETOS</h2>
+            <div class="carrousel">
+                <input class="btn-carrousel btn-back" type="button" value="<">
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="project-title">
+                            <h3>Caixa Frutaria</h3>
+                        </div>
+                        <div class="project-card-image">
+                            <img src="./imgs/Project_Caixa-Fruits.png" alt="">
+                        </div>
+                        <div class="project-description">
+                            <p>
+                                Projeto idealizado com base nos conhecimentos adquiridos no 
+                                segundo semestre do curso técnico de desenvolvimento de sistemas <br>
+                                Consiste em um aplicativo que simula basicamente o funcionamento de uma caixa registradora , 
+                                registrando os dados processados em arquivos .txt, 
+                                a persistência dos dados é armazenada na área de trabalho do usúario em uma 
+                                pasta criada pelo app chamada "Arquivos"
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-item">
-                <div class="project-card">
-
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-card">
-                    <div class="project-title">
-                        <h3>Project-1</h3>
-                    </div>
-
-                </div>
+                <input class="btn-carrousel btn-after" type="button" value=">">
             </div>
         </div>
 
@@ -200,8 +192,13 @@ pasta criada pelo app chamada "Arquivos"
                 Lucas Cavalheiro © <span>2021</span>
             </div>
         </footer>
+        <div class="goTop">
+            <a href="#top-header">
+                <img src="./imgs/right-arrow.png" alt="">
+            </a>
+        </div>
     </main>
     
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>

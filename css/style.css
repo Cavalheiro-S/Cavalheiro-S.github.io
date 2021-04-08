@@ -197,8 +197,7 @@ p{
 
 
 .logoHov:hover{
-    width: 35px;
-    height: 35px;
+    transform: scale(1.2);
 }
 
 .text{

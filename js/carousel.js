@@ -16,7 +16,7 @@ export default function changeCarrousel(){
     let cont = 0;
 
 
-    addProjectToCarrousel("./imgs/Project-App-indicadores.png","App de métricas" ,"Projeto construído utilizando o framework React do javascript, foi utilizado também a biblioteca 'Material-UI' para a estilização de alguns componentes, a função do programa é receber os dados financeiros de uma empresa e com base neles calcular a margem desses resultados","https://github.com/Cavalheiro-S/App-CalculoMetricas");
+    addProjectToCarrousel("./imgs/Project-App-Indicadores.png","App de métricas" ,"Projeto construído utilizando o framework React do javascript, foi utilizado também a biblioteca 'Material-UI' para a estilização de alguns componentes, a função do programa é receber os dados financeiros de uma empresa e com base neles calcular a margem desses resultados","https://github.com/Cavalheiro-S/App-CalculoMetricas");
     addProjectToCarrousel("./imgs/Project_Caixa-Fruits.png","App Caixa Registradora","Aplicação  programada em C# e consiste em simular basicamente o funcionamento de uma caixa registradora, registrando os dados processados em arquivos .txt, a persistência dos dados é armazenada na área de trabalho do usúario em uma pasta criada pelo app chamada 'Arquivos'","https://github.com/Cavalheiro-S/CaixaRegistradora");
     addProjectToCarrousel("./imgs/Project-CRUD-Products.png","CRUD Loja Celulares","Aplicação CRUD criada utilizando a linguagem C# com o Windows Forms, da plataforma .NET, para a persistência dos dados foi utilizado o SQL Server como banco de dados","https://github.com/Cavalheiro-S/CRUD-Senai");
     

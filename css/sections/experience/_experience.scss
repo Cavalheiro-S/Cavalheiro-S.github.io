@@ -1,11 +1,8 @@
 .experience {
     display: flex;
-    margin: 50px 0px;
     letter-spacing: 2px;
     position: relative;
     flex-direction: column;
-    margin: 50px 0px;
-    overflow: hidden;
     transition: transform ease 0.2s;
     transition: background-color ease 0.5s;
 
@@ -44,24 +41,32 @@
     }
 
     &__item {
+        padding: 16px 0px;
         transition: ease 0.2s;
 
         &:hover {
             background-color: #e63946;
+        }
+
+        &:hover .experience__career {
             color: white;
         }
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
+    }
 
-        span {
+    &__info {
+        text-align: center;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            gap: 8px;
             color: black;
         }
     }
 
-    &__info{
-        text-align: center;
+    &__career {
+        font-size: 1.5rem;
     }
 }

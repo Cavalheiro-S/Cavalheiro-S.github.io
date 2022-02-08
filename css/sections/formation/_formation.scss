@@ -4,7 +4,7 @@
     font-family: "Oswald", sans-serif;
     flex-direction: column;
     letter-spacing: 2px;
-    margin: 20px 0px;
+    margin: 16px 0px;
     overflow: hidden;
     transition: transform ease 0.2s;
     transition: background-color ease 0.5s;
@@ -32,11 +32,13 @@
         transition: ease 0.5s;
         bottom: 0%;
     }
-    &__info{
+    &__info {
         text-align: center;
     }
 
     &__item {
+        
+        padding: 16px;
         &:hover {
             background-color: #e63946;
             color: white;
@@ -52,12 +54,21 @@
                 transform: translateX(-110%);
             }
         }
-        
 
         a {
             text-decoration: none;
-            color: black;
+            color: inherit;
         }
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
+
+    &__local {
+        color: black;
+        line-height: 32px;
     }
 
     &__title {

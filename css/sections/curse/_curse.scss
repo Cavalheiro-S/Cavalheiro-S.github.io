@@ -1,4 +1,5 @@
 .curse {
+    margin: 2rem 0px;
     position: relative;
     overflow: hidden;
 
@@ -50,6 +51,8 @@
         overflow: hidden;
     }
     &__item {
+        display: flex;
+        flex-direction: column;
         position: relative;
 
         &:hover::after {
@@ -85,7 +88,7 @@
         }
 
         span {
-            padding: 20px 20px;
+            padding: 8px;
             color: black;
         }
     }
@@ -129,3 +132,18 @@
         color: #f4f4f4;
     }
 }
+
+@media all and (max-width:768px){
+
+    .curse{
+
+        &__header{
+            margin: 48px 0px;
+        }
+    }
+    .link{
+        text-align: center;
+        width: 100%;
+    }
+}
+

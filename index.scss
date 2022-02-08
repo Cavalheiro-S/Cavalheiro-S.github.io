@@ -1,12 +1,24 @@
+$primary-color:#1d3557;
+$secondary-color: #e63946;
+@import "./css/header/header";
+@import "./css/toggle/toggle";
+@import "./css/main/main";
+@import "./css/sections/curse/curse";
+@import "./css/sections/experience/experience";
+@import "./css/sections/formation/formation";
+@import "./css/sections/projects/projects";
+@import "./css/footer/footer";
+
 * {
     font-size: 20px;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 body {
-    display: grid;
+    overflow-x: hidden;
     margin: 0;
     padding: 0%;
+    width: 100%;
     height: 100%;
     background-color: white;
     font-family: "Oswald", sans-serif;
@@ -16,8 +28,8 @@ body {
     display: block;
     text-align: center;
     font-size: 1.5em;
-    color: #e63946;
-    margin: 10px 0px;
+    color: $secondary-color;
+    margin: 12px 0px;
     transition: color ease 0.5s;
     letter-spacing: 2px;
 }
@@ -59,7 +71,7 @@ body {
     width: 50px;
     align-items: center;
     justify-content: center;
-    background-color: #e63946;
+    background-color: $secondary-color;
     transition: all ease 0.3s;
     cursor: pointer;
 
@@ -86,11 +98,3 @@ body {
     }
 }
 
-@import "./css/header/header";
-@import "./css/toggle/toggle";
-@import "./css/main/main";
-@import "./css/sections/curse/curse";
-@import "./css/sections/experience/experience";
-@import "./css/sections/formation/formation";
-@import "./css/sections/projects/projects";
-@import "./css/footer/footer";

@@ -1,223 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css//header/header.css">
-    <link rel="stylesheet" href="./css/main/main.css">
-    <link rel="stylesheet" href="./css/sections/formation.css">
-    <link rel="stylesheet" href="./css/sections/experience.css">
-    <link rel="stylesheet" href="./css/sections/curse.css">
-    <link rel="stylesheet" href="./css/sections/projects.css">
-    <link rel="stylesheet" href="./css/footer/footer.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <header id="top-header">
-        <ul class="menu-header">
-            <li class="item-header"><a href="#main-div">Início</a></li>
-            <li class="item-header"><a id="sobre" href="#about" >Sobre</a></li>
-            <li class="item-header"><a href="#project" >Projetos</a></li>
+    <header class="header">
+        <ul class="header__menu">
+            <li class="header__item"><a href="#main-div">Início</a></li>
+            <li class="header__item"><a id="sobre" href="#about">Sobre</a></li>
+            <li class="header__item"><a href="#project">Projetos</a></li>
         </ul>
     </header>
-    <div class="header-toggle">
-        <div class="header-toggle-open">
-            <ul class="menu-toggle">
-                <li class="item-toggle"><a href="#main-div">Início</a></li>
-                <li class="item-toggle"><a id="sobre" href="#about" >Sobre</a></li>
-                <li class="item-toggle"><a href="#project" >Projetos</a></li>
+    <div class="toggle">
+        <div class="toggle--open">
+            <ul class="toggle__menu">
+                <li class="toggle__item"><a href="#main-div">Início</a></li>
+                <li class="toggle__item"><a id="sobre" href="#about">Sobre</a></li>
+                <li class="toggle__item"><a href="#project">Projetos</a></li>
             </ul>
         </div>
-        <img class="img-toggle" src="./imgs/menu.png" alt="">  
+        <img class="toggle__img" src="./imgs/menu.png" alt="">
     </div>
-    <main id="main-div">
-        <div class="back-image">
+    <main class="main" id="main-div">
+        <div class="main__background">
             <div class="card">
-                <img class="perfil" src="./imgs/Perfil.jpg" alt="Lucas Cavalheiro De Godoy Ribeiro">
-                <div class="info">
-                    <div class="info-top">
-                        <div class="text">
-                            <p>
-                                <span class="name-title">Lucas Cavalheiro De Godoy Ribeiro</span> <br>
-                                <span class="resume">Estudante de Engenharia de Software</span>
-                            </p>
-                            <p class="text-resume">
+                <img class="card__perfil" src="./imgs/Perfil.jpg" alt="Lucas Cavalheiro De Godoy Ribeiro">
+                <div class="card__info">
+                    <div class="card__top">
+                        <div class="card__text">
+                            <span class="card__name">Lucas Cavalheiro De Godoy Ribeiro</span>
+                            <span class="card__career">Estudante de Engenharia de Software</span>
+                            <p class="card__resume">
                                 Estudante da área de programação buscando realizar o sonho de trabalhar com tecnologia ,
                                 autodidata desde que me conheço por gente ,
-                                tenho como objetivo me especializar nas tecnologias Front-End 
+                                tenho como objetivo me especializar nas tecnologias Front-End
                             </p>
                         </div>
-                        
+
                     </div>
-                    <div class="info-bar-down">
-                        <a href="https://www.linkedin.com/in/lucas-cavalheiro-753947186/" target="_blank"><img class="imgLogo logoHov" src="./imgs/linkedin.png" alt="" class="logo"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100000756192083" target="_blank"><img class="imgLogo logoHov" src="./imgs/facebook.png" alt="" class="logo"></a>
-                        <a href="https://github.com/Cavalheiro-S" target="_blank"><img class="imgLogo logoHov" src="./imgs/github.png" alt="" class="logo"></a>
+                    <div class="card__down">
+                        <a href="https://www.linkedin.com/in/lucas-cavalheiro-753947186/" target="_blank">
+                            <img class="image__logo logoHov" src="./imgs/linkedin.png" alt="" class="logo">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100000756192083" target="_blank">
+                            <img class="image__logo logoHov" src="./imgs/facebook.png" alt="" class="logo">
+                        </a>
+                        <a href="https://github.com/Cavalheiro-S" target="_blank">
+                            <img class="image__logo logoHov" src="./imgs/github.png" alt="" class="logo">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div id="about">
+
+        <div class="about">
             <!-- ÁREA FORMAÇÃO -->
             <section class="formation">
-                <h4 class="formation-title title">FORMAÇÃO</h4>
-                <div class="formation-item">
-                    <p><span><a href="https://www.unibrasil.com.br/cursos/graduacao/escola-politecnica/engenharia-de-software/" target="_blank">Curso Superior Engenharia de Software</a></span> <br>
+                <h4 class="formation__title title">FORMAÇÃO</h4>
+                <div class="formation__item">
+                    <p class="formation__info">
+                        <span>
+                            <a href="https://www.unibrasil.com.br/cursos/graduacao/escola-politecnica/engenharia-de-software/"
+                                target="_blank">Curso Superior Engenharia de Software
+                            </a>
+                        </span><br>
                         Local: Unibrasil, conclusão 2025
                     </p>
                 </div>
-                
-                <div class="formation-item">
-                    <p><span><a href="https://www.sistemafiep.org.br/cursos-tecnicos/cursos/curso-tecnico-em-desenvolvimento-de-sistemas-18-33358-398381.shtml" target="_blank">Curso Técnico de Desenvolvimento de Sistemas 4.0</a></span> <br>
+
+                <div class="formation__item">
+                    <p class="formation__info">
+                        <span>
+                            <a href="https://www.sistemafiep.org.br/cursos-tecnicos/cursos/curso-tecnico-em-desenvolvimento-de-sistemas-18-33358-398381.shtml"
+                                target="_blank">Curso Técnico de Desenvolvimento de Sistemas 4.0
+                            </a>
+                        </span> <br>
                         Local: Senai Celso Charuri, cursado 2 semestres
                     </p>
                 </div>
             </section>
             <!-- ÁREA DE EXPERIÊNCIAS-->
             <section class="experience">
-                <h4 class="experience-title title">EXPERIÊNCIA</h4>
-                <div class="experience-item">
-                    <p>
-                        <a href="https://www.smp-automotive.com/en/global/curitiba" target="_blank"><span>Estágiario da Sistemas de informação</span> <br></a>
-                       Suporte ao sistema Datasul e a seus usuários, auxílio na implementação de recursos sistêmicos, auxílio nas demandas de infraestrutura e de sistemas
-                    </p>            
-                    
+                <h4 class="experience__title title">EXPERIÊNCIA</h4>
+                <div class="experience__item">
+                    <p class="experience__info">
+                        <a href="https://www.smp-automotive.com/en/global/curitiba" target="_blank"><span>Estágiario da
+                                Sistemas de informação</span> <br></a>
+                        Suporte ao sistema Datasul e a seus usuários, auxílio na implementação de recursos sistêmicos,
+                        auxílio nas demandas de infraestrutura e de sistemas
+                    </p>
+
                 </div>
-                <div class="experience-item">            
-                    <p>
-                        <a href="https://www.grupoindusparquet.com.br/marca/masterpiso" target="_blank"><span>Auxiliar de produção</span> <br></a>
+                <div class="experience__item">
+                    <p class="experience__info">
+                        <a href="https://www.grupoindusparquet.com.br/marca/masterpiso" target="_blank"><span>Auxiliar
+                                de produção</span> <br></a>
                         Auxílio para preparar materiais para alimentação da linha de produção,
                         abastecendo a linha de produção, alimentando as máquinas e organizando a área de serviço
                     </p>
                 </div>
 
-                <div class="experience-item">            
-                    <p>
+                <div class="experience__item">
+                    <p class="experience__info">
                         <span>Manutenção de Hardware (Freelancer)</span> <br>
-                        Efetuando manutenção e formatando computadores, 
+                        Efetuando manutenção e formatando computadores,
                         resolvendo problemas relacionados a rede interna.
                     </p>
                 </div>
             </section>
-               
+
             <!--ÁREA COM CURSOS-->
-            <h4 class="curse-title title">CURSOS COMPLEMENTARES</h4>
             <section class="curse">
+                <h4 class="curse__title title">CURSOS COMPLEMENTARES</h4>
                 <ul>
-                    <div class="curse-header">
-                        <a class="link" target="_blank" href="https://cursos.alura.com.br/user/compalura/fullCertificate/f250e5ea782bb88fc5573f475b5fdf60"><img src="https://cursos.alura.com.br/assets/images/alura/favicon.ico" alt="">Clique aqui para exibir todos os cursos realizados na plataforma Alura</a>
+                    <div class="curse__header">
+                        <a class="link" target="_blank"
+                            href="https://cursos.alura.com.br/user/compalura/fullCertificate/f250e5ea782bb88fc5573f475b5fdf60"><img
+                                src="https://cursos.alura.com.br/assets/images/alura/favicon.ico" alt="">Clique aqui
+                            para exibir todos os cursos realizados na plataforma Alura</a>
                     </div>
-                    <div class="line-1">
-                        <li class="curse-item">
+                    <div class="curse__line curse__line--1">
+                        <li class="curse__item">
                             <span>Formação Front-End</span> <br>
                             Local:Alura, conclusão 2021 <br>
                             Carga Horária: 170:00 horas/aula
                         </li>
-                        <li class="curse-item">
+                        <li class="curse__item">
                             <span>C# Programação orientada a objetos</span> <br>
                             Local:Udemy Online <br>
                             Carga Horária: 37:00 horas
                         </li>
-                        <li class="curse-item">
+                        <li class="curse__item">
                             <span>Inglês Básico</span> <br>
                             Local:Jumper Cursos, conclusão 2019 <br>
                             Carga Horária: 144:00 horas/aula
                         </li>
-                        
+
                     </div>
-                    <div class="line-2">
-                        <li class="curse-item">
+                    <div class="curse__line curse__line--2">
+                        <li class="curse__item">
                             <span>HTTP: Entendendo a web por baixo dos panos</span> <br>
                             Local:Alura Cursos <br>
                             Carga Horária: 14:00 horas
                         </li>
-                        <li class="curse-item">
+                        <li class="curse__item">
                             <span>Aperfeiçoamento em orientação profissional</span> <br>
                             Local:Senai Celso Charuri, conclusão 2020 <br>
                             Carga Horária: 12:00 horas/aula
                         </li>
-                        <li class="curse-item">
+                        <li class="curse__item">
                             <span>JavaScript: Programando a Orientação a Objetos</span> <br>
                             Local:Alura Cursos <br>
                             Carga Horária: 10:00 horas
                         </li>
-                        
-                    </div>
-                    
-                </ul>
-                
-            </section>
-        </section>
 
-        <!--ÁREA COM PROJETOS -->
-        <section id="project" class="projects">
-            <h4 class="projects-title title">PROJETOS</h4>
-            <div class="carrousel">
-                
-                <div class="project-item">
-                    
-                        
-                        <div class="project-title">
+                    </div>
+
+                </ul>
+
+            </section>
+            </section>
+
+            <!--ÁREA COM PROJETOS -->
+            <section id="project" class="project">
+                <h4 class="project__title title">PROJETOS</h4>
+                <div class="project__carrousel">
+
+                    <div class="carrousel">
+
+
+                        <div class="carrousel__title">
                             <h3>App métricas</h3>
                         </div>
-                        <a class="link link-projeto" target="_blank" href="https://github.com/Cavalheiro-S/App-CalculoMetricas"><img class="imgLogo logoHov" src="./imgs/github.png" alt=""> Repositório do projeto</a>
-                    <div class="project-card">
-                        <div class="project-card-image">
-                            <img class="carrousel-img" src="./imgs/Project-App-Indicadores.png" alt=""> 
-                            <input class="btn-carrousel btn-back" type="button" value="<">
-                            <input class="btn-carrousel btn-next" type="button" value=">">
-                        </div>
-                        <div class="project-description">
-                            <p>
-                                Projeto construído utilizando o framework React do javascript, foi utilizado também a biblioteca 'Material-UI' para a estilização de alguns componentes, a função do programa é receber os dados financeiros de uma empresa e com base neles calcular a margem desses resultados
-                            </p>
+                        <a class="link carrousel__link" target="_blank"
+                            href="https://github.com/Cavalheiro-S/App-CalculoMetricas">
+                            <img class="image__logo logoHov" src="./imgs/github.png" alt=""> Repositório do projeto
+                        </a>
+                        <div class="carrousel__card">
+                            <div class="carrousel__div">
+                                <img class="carrousel__image" src="./imgs/Project-App-Indicadores.png" alt="">
+                                <input class="carrousel__button button--back" type="button" value="<">
+                                <input class="carrousel__button button--next" type="button" value=">">
+                            </div>
+                            <div class="project__description">
+                                <p>
+                                    Projeto construído utilizando o framework React do javascript, foi utilizado também
+                                    a biblioteca 'Material-UI' para a estilização de alguns componentes, a função do
+                                    programa é receber os dados financeiros de uma empresa e com base neles calcular a
+                                    margem desses resultados
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-            </div>
-        </section>
 
-        
-        <div class="goTop">
-            <a href="#top-header">
-                <img src="./imgs/right-arrow.png" alt="">
-            </a>
-        </div>
+                </div>
+            </section>
+
+
+            <div class="goTop">
+                <a href="#top-header">
+                    <img src="./imgs/right-arrow.png" alt="">
+                </a>
+            </div>
     </main>
     <!-- ÁREA FOOTER-->
     <footer>
-        <div class="footer-projects">
+        <div class="footer__project">
             <ul>
                 <h4>Projects</h4>
-                <li><a class="footer-link" href="#project">App Métricas</a></li>
-                <li><a class="footer-link" href="#project">Caixa Registradora</a></li>
-                <li><a class="footer-link" href="#project">CRUD Loja</a></li>
+                <li><a class="footer__link" href="#project">App Métricas</a></li>
+                <li><a class="footer__link" href="#project">Caixa Registradora</a></li>
+                <li><a class="footer__link" href="#project">CRUD Loja</a></li>
             </ul>
         </div>
 
-        <div class="footer-contacts">
+        <div class="footer__contact">
             <ul>
-                <li>
+                <li class="footer__item">
                     <a href="https://www.facebook.com/profile.php?id=100000756192083" target="_blank">
-                        <img class="imgLogo" src="./imgs/facebook.png" alt="">
+                        <img class="image__logo" src="./imgs/facebook.png" alt="">
                     </a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="https://github.com/Cavalheiro-S" target="_blank">
-                        <img class="imgLogo" src="./imgs/github.png" alt="">
+                        <img class="image__logo" src="./imgs/github.png" alt="">
                     </a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="https://www.linkedin.com/in/lucas-cavalheiro-753947186/" target="_blank">
-                        <img class="imgLogo" src="./imgs/linkedin.png" alt="">
+                        <img class="image__logo" src="./imgs/linkedin.png" alt="">
                     </a>
                 </li>
             </ul>
@@ -229,4 +249,5 @@
     </footer>
     <script src="./js/index.js" type="module"></script>
 </body>
+
 </html>

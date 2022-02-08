@@ -1,0 +1,49 @@
+.header {
+    font-family: inherit;
+    display: flex;
+    width: 100%;
+    background-color: #1d3557;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: flex-end;
+    color: white;
+    height: 100px;
+    border-bottom: 1px solid white;
+
+    &__menu {
+        margin: 0%;
+        justify-items: center;
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 0px 10px;
+        padding: 0px;
+        a::before {
+            position: absolute;
+            content: "";
+            height: 5px;
+            width: 100%;
+            background-color: #f4f4f4;
+            transition: ease 0.1s all;
+            left: -100%;
+            bottom: 0%;
+        }
+
+        a {
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0px 20px;
+            padding: 10px;
+            overflow: hidden;
+            transition: all ease 0.5s;
+        }
+
+        a:hover::before {
+            transform: translate(100%);
+        }
+    }
+}

@@ -5,9 +5,9 @@ const html = document.documentElement;
 const goTop = document.querySelector(".goTop");
 
 //catch item from "header-toggle"
-const toggleMenu = document.querySelector(".header-toggle");
-const toggleMenuOpen = document.querySelector(".header-toggle-open");
-const toggleMenuImg = document.querySelector(".header-toggle img");
+const toggleMenu = document.querySelector(".toggle");
+const toggleMenuOpen = document.querySelector(".toggle--open");
+const toggleMenuImg = document.querySelector(".toggle img");
 
 export default function colorToggleMenu(){
     const scrollPerc = parseInt(100 * html.scrollTop / (html.scrollHeight - html.clientHeight));

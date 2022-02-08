@@ -1,0 +1,96 @@
+* {
+    font-size: 20px;
+    box-sizing: border-box;   
+}
+
+body {
+    display: grid;
+    margin: 0;
+    padding: 0%;
+    height: 100%;
+    background-color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+.title {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: #e63946;
+    margin: 10px 0px;
+    transition: color ease 0.5s;
+    letter-spacing: 2px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+
+    span {
+        font-size: 1em;
+    }
+}
+
+.image {
+    &__logo {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        margin: 5px 10px;
+        border-radius: 20px;
+        transition: ease 0.2s;
+    }
+}
+
+.goTop {
+    position: fixed;
+    display: none;
+    bottom: 0%;
+    right: 0%;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e63946;
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-20px);
+    }
+
+    img {
+        display: flex;
+        height: 50%;
+        width: 50%;
+        text-decoration: none;
+        color: white;
+        transform: rotate(-90deg);
+        filter: invert(100%);
+    }
+
+    a {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@import "./css/header/header";
+@import "./css/toggle/toggle";
+@import "./css/main/main";
+@import "./css/sections/curse/curse";
+@import "./css/sections/experience/experience";
+@import "./css/sections/formation/formation";
+@import "./css/sections/projects/projects";
+@import "./css/footer/footer";

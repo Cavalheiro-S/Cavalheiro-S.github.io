@@ -16,20 +16,10 @@
     <header id="header" class="header">
         <ul class="header__menu">
             <li class="header__item"><a href="#main-div">Início</a></li>
-            <li class="header__item"><a id="sobre" href="#about">Sobre</a></li>
+            <li class="header__item"><a href="#about">Sobre</a></li>
             <li class="header__item"><a href="#project">Projetos</a></li>
         </ul>
     </header>
-    <div class="toggle">
-        <div class="toggle--open">
-            <ul class="toggle__menu">
-                <li class="toggle__item"><a href="#main-div">Início</a></li>
-                <li class="toggle__item"><a id="sobre" href="#about">Sobre</a></li>
-                <li class="toggle__item"><a href="#project">Projetos</a></li>
-            </ul>
-        </div>
-        <img class="toggle__img" src="./imgs/menu.png" alt="">
-    </div>
     <main class="main" id="main-div">
         <div class="main__background">
             <div class="card">
@@ -49,13 +39,13 @@
                     </div>
                     <div class="card__down">
                         <a href="https://www.linkedin.com/in/lucas-cavalheiro-753947186/" target="_blank">
-                            <img class="image__logo logoHov" src="./imgs/linkedin.png" alt="" class="logo">
+                            <img class="image__logo logoHov" src="./imgs/linkedin.png" alt="">
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=100000756192083" target="_blank">
-                            <img class="image__logo logoHov" src="./imgs/facebook.png" alt="" class="logo">
+                            <img class="image__logo logoHov" src="./imgs/facebook.png" alt="">
                         </a>
                         <a href="https://github.com/Cavalheiro-S" target="_blank">
-                            <img class="image__logo logoHov" src="./imgs/github.png" alt="" class="logo">
+                            <img class="image__logo logoHov" src="./imgs/github.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -146,14 +136,14 @@
             <!--ÁREA COM CURSOS-->
             <section class="curse">
                 <h4 class="curse__title title">CURSOS COMPLEMENTARES</h4>
-                <ul>
+                <div class="curse__list">
                     <div class="curse__header">
                         <a class="link" target="_blank"
                             href="https://cursos.alura.com.br/user/compalura/fullCertificate/f250e5ea782bb88fc5573f475b5fdf60"><img
                                 src="https://cursos.alura.com.br/assets/images/alura/favicon.ico" alt="">Clique aqui
                             para exibir todos os cursos realizados na plataforma Alura</a>
                     </div>
-                    <div class="curse__line curse__line--1">
+                    <ul class="curse__line curse__line--1">
                         <li class="curse__item">
                             <span>Formação Front-End</span>
                             <span>Local:Alura, conclusão 2021 </span>
@@ -170,8 +160,8 @@
                             <span>Carga Horária: 144:00 horas/aula</span>
                         </li>
 
-                    </div>
-                    <div class="curse__line curse__line--2">
+                    </ul>
+                    <ul class="curse__line curse__line--2">
                         <li class="curse__item">
                             <span>HTTP: Entendendo a web por baixo dos panos</span>
                             <span>Local:Alura Cursos</span>
@@ -187,12 +177,12 @@
                             <span>Local:Alura Cursos</span>
                             <span>Carga Horária: 10:00 horas</span>
                         </li>
-                    </div>
+                    </ul>
 
-                </ul>
+                </div>
 
             </section>
-            </section>
+
 
             <!--ÁREA COM PROJETOS -->
             <section id="project" class="project">
@@ -201,7 +191,7 @@
 
                     <a class="carrousel__link" target="_blank"
                         href="https://github.com/Cavalheiro-S/App-CalculoMetricas">
-                        <h3 class="carrousel__title">App métricas</h3>
+                        <h3 class="carrousel__title">Gerenciador Financeiro</h3>
                         <img class="image__logo logoHov carrousel__github" src="./imgs/github.png" alt="">
                     </a>
                     <div class="carrousel__card">
@@ -212,30 +202,28 @@
                         </div>
                         <div class="project__description">
                             <p>
-                                Projeto construído utilizando o framework React do javascript, foi utilizado também
-                                a biblioteca 'Material-UI' para a estilização de alguns componentes, a função do
-                                programa é receber os dados financeiros de uma empresa e com base neles calcular a
-                                margem desses resultados
+                                Aplicação web construída com intuito de registrar gastos e investimentos pessoais, foram
+                                utilizados: ReactJS, Typescript e Sass
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-
             <div class="goTop">
                 <a href="#header">
                     <img src="./imgs/right-arrow.png" alt="">
                 </a>
             </div>
+        </div>
     </main>
     <!-- ÁREA FOOTER-->
     <footer class="footer">
         <div class="footer__project">
             <ul>
-                <h4>Projetos</h4>
-                <li><a class="footer__item footer__link" href="#project">App Métricas</a></li>
-                <li><a class="footer__item footer__link" href="#project">Caixa Registradora</a></li>
+                <span>Projetos</span>
+                <li><a class="footer__item footer__link" href="#project">Gerenciador Financeiro</a></li>
+                <li><a class="footer__item footer__link" href="#project">Gerenciador Calórico</a></li>
                 <li><a class="footer__item footer__link" href="#project">CRUD Loja</a></li>
             </ul>
         </div>

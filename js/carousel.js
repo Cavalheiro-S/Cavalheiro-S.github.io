@@ -6,7 +6,7 @@ const carrouselTitle = document.querySelector(".carrousel h3");
 const carrouselDescription = document.querySelector(".project__description p");
 const carrouselLinkGithub = document.querySelector(".carrousel__link");
 
-const linksFooter = document.querySelectorAll(".footer-link");
+const linksFooter = document.querySelectorAll(".footer__link");
 
 export default function changeCarrousel() {
     const paths = [];
@@ -18,15 +18,15 @@ export default function changeCarrousel() {
 
     addProjectToCarrousel(
         "./imgs/Project-Gerenciador-Contabil.png",
-        "App de métricas",
-        "Projeto construído utilizando o framework React do javascript, foi utilizado também a biblioteca 'Material-UI' para a estilização de alguns componentes, a função do programa é receber os dados financeiros de uma empresa e com base neles calcular a margem desses resultados",
-        "https://github.com/Cavalheiro-S/App-CalculoMetricas");
+        "Gerenciador Financeiro",
+        "Aplicação web construída com intuito de registrar gastos e investimentos pessoais, foram utilizados: ReactJS, Typescript e Sass",
+        "https://github.com/Cavalheiro-S/App-Controle-Financeiro");
 
     addProjectToCarrousel(
-        "./imgs/Project_Caixa-Fruits.png",
-        "App Caixa Registradora",
-        "Aplicação  programada em C# e consiste em simular basicamente o funcionamento de uma caixa registradora, registrando os dados processados em arquivos .txt, a persistência dos dados é armazenada na área de trabalho do usúario em uma pasta criada pelo app chamada 'Arquivos'",
-        "https://github.com/Cavalheiro-S/CaixaRegistradora");
+        "./imgs/Project-Gerenciador-Calorico.png",
+        "Gerenciador Calórico",
+        "Aplicativo para calcular o IMC e a TMB , tecnologias utilizadas: Javascript, Html, Css",
+        "https://github.com/Cavalheiro-S/App-gerenciador-calorico");
 
     addProjectToCarrousel(
         "./imgs/Project-CRUD-Products.png",
@@ -41,7 +41,6 @@ export default function changeCarrousel() {
             cont = 0;
         }
         changeInfoCarrousel(cont);
-        console.log(paths[cont]);
     })
     btnBack.addEventListener("click", () => {
         cont--;
@@ -53,11 +52,11 @@ export default function changeCarrousel() {
 
     linksFooter.forEach(item => {
         item.addEventListener("click", (event) => {
-            if (item.textContent == "App Métricas") {
+            if (item.textContent == "Gerenciador Financeiro") {
                 cont = 0;
                 changeInfoCarrousel(cont);
             }
-            else if (item.textContent == "Caixa Registradora") {
+            else if (item.textContent == "Gerenciador Calórico") {
                 cont = 1;
                 changeInfoCarrousel(cont);
             }

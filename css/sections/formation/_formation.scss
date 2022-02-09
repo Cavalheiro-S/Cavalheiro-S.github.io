@@ -68,12 +68,9 @@
     }
 
     &__name {
+        font-weight: bold;
         font-size: 1.3rem;
         line-height: 32px;
-
-        a{
-            font-weight: bold;
-        }
     }
 
     &__local {

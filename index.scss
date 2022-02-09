@@ -17,8 +17,8 @@ $secondary-color: #e63946;
 html{
     margin: 0;
     padding: 0%;
-    overflow-x: hidden;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -103,6 +103,12 @@ body {
 }
 
 @media all and (max-width: 768px){
+
+    html,body{
+        padding: 0%;
+        margin: 0%;
+        overflow-x: hidden;
+    }
 
     .title{
         margin: 16px 0px;

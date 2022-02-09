@@ -14,6 +14,10 @@ $secondary-color: #e63946;
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     margin: 0;
@@ -29,7 +33,7 @@ body {
     text-align: center;
     font-size: 1.5em;
     color: $secondary-color;
-    margin: 12px 0px;
+    margin: 32px 0px;
     transition: color ease 0.5s;
     letter-spacing: 2px;
 }
@@ -56,7 +60,6 @@ body {
         height: 30px;
         width: 30px;
         margin: 5px 10px;
-        border-radius: 20px;
         transition: ease 0.2s;
     }
 }
@@ -95,6 +98,13 @@ body {
         width: 100%;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media all and (max-width: 768px){
+
+    .title{
+        margin: 16px 0px;
     }
 }
 

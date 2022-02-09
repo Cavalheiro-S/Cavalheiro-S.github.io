@@ -1,11 +1,12 @@
 .project {
+    
     position: relative;
-    background-color: $primary-color;
-    padding: 0% 10% 10% 10%;
+    width: 100vw;
 
     &__description {
         color: #f4f4f4;
-        background-color: $secondary-color;
+        border-radius: 0px 0px 8px 8px;
+        background-color: $primary-color;
         height: 100px;
 
         p {
@@ -22,21 +23,42 @@
 
 .carrousel {
     position: relative;
-    width: 100%;
+    margin: auto;
+    width: 80%;
 
-    &__title {
-        margin: 32px 0px;
-        color: #f4f4f4;
+    &__div {
+        color: $primary-color;
+        width: 100%;
         text-align: center;
+    }
+    &__title{
+        justify-content: flex-end;
+    }
+
+    &__github{
+        filter: invert(100%);
     }
 
     &__link {
-        color: #f4f4f4;
         display: flex;
-        justify-content: center;
+        border-radius: 8px 8px 0px 0px;
+        text-decoration: none;
+        color: #f4f4f4;
         align-items: center;
+        justify-content: center;
         padding: 8px;
-        background-color: $secondary-color;
+        font-size: 1.4rem;
+        background-color: $primary-color;
+        transition: .2s ease all;
+
+        &:hover{
+            background-color: $secondary-color;
+            color: #f4f4f4;
+        }
+    }
+
+    &__card{
+        height: 80vh;
     }
 
     &__div {
@@ -45,6 +67,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+        height: 80%;
     }
 
     &__image {
@@ -54,15 +77,19 @@
 
     &__button {
         position: absolute;
-        color: black;
+        color: white;
         font-size: 2em;
-        background-color: white;
+        background-color: $primary-color;
         width: 50px;
         height: 100%;
         padding: 0px;
         transition: all ease 0.2s;
         border: none;
         cursor: pointer;
+
+        &:hover{
+            background-color: $secondary-color;
+        }
     }
 }
 
@@ -81,25 +108,46 @@
 @media all and (max-width: 768px) {
     .project {
         padding: 0px;
+        height: auto;
 
         &__description {
             background-color: white;
             color: $secondary-color;
+            height: auto;
+            margin: 32px 0px;
         }
     }
-
+    
     .carrousel {
+        margin: 0%;
+        width: 100%;
+        height: auto;
+        &__div{
+            height: auto;
+        }
+
+        &__card{
+            height: 100%;
+        }
+
         &__link {
+            border-radius: 0px;
+            padding: 32px 64px;
             position: relative;
         }
         &__image {
             display: none;
         }
         &__button {
-            transform: translateY(-49%);
             position: absolute;
+            transform: translateY(-100%);
             height: 48px;
             display: block;
+
+            &:hover{
+
+                background-color: $primary-color;
+            }
         }
     }
 }

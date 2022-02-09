@@ -55,6 +55,9 @@
         flex-direction: column;
         position: relative;
 
+        & span:first-child{
+            font-weight: bold;
+        }
         &:hover::after {
             opacity: 1;
         }
@@ -94,7 +97,7 @@
     }
     &__header {
         display: flex;
-        margin: 50px;
+        margin: 16px 0px;
         grid-column: 1/4;
         padding: 10px;
         justify-content: center;
@@ -136,6 +139,10 @@
 @media all and (max-width:768px){
 
     .curse{
+
+        &__line{
+            grid-column: 1/3;
+        }
 
         &__header{
             margin: 48px 0px;

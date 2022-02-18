@@ -19,20 +19,20 @@ export default function changeCarrousel() {
     addProjectToCarrousel(
         "./imgs/Project-Gerenciador-Contabil.png",
         "Gerenciador Financeiro",
-        "Aplicação web construída com intuito de registrar gastos e investimentos pessoais, foram utilizados: ReactJS, Typescript e Sass",
+        "Aplicação web construída com intuito de registrar gastos e investimentos pessoais, tecnologias utilizadas: ReactJS, Typescript , Sass e Jest",
         "https://github.com/Cavalheiro-S/App-Controle-Financeiro");
 
     addProjectToCarrousel(
         "./imgs/Project-Gerenciador-Calorico.png",
         "Gerenciador Calórico",
-        "Aplicativo para calcular o IMC e a TMB , tecnologias utilizadas: Javascript, Html, Css",
+        "Aplicativo para calcular o IMC e a TMB , tecnologias utilizadas: Javascript, Html e Css",
         "https://github.com/Cavalheiro-S/App-gerenciador-calorico");
 
     addProjectToCarrousel(
-        "./imgs/Project-CRUD-Products.png",
-        "CRUD Loja Celulares",
-        "Aplicação CRUD criada utilizando a linguagem C# com o Windows Forms, da plataforma .NET, para a persistência dos dados foi utilizado o SQL Server como banco de dados",
-        "https://github.com/Cavalheiro-S/CRUD-Senai");
+        "./imgs/Project-Fifa-Players.png",
+        "App para pesquisar jogadores de fifa",
+        "Aplicação construida utilizando uma API para fazer a busca de jogadores e seus respectivos resultados e mostrar-os para o usuário, tecnologias utilizadas : ReactJS, Typescript, Axios e Sass",
+        "https://github.com/Cavalheiro-S/App-Search-Fifa-Players-Statistics");
 
 
     btnAfter.addEventListener("click", () => {
@@ -60,7 +60,7 @@ export default function changeCarrousel() {
                 cont = 1;
                 changeInfoCarrousel(cont);
             }
-            else if (item.textContent == "CRUD Loja") {
+            else if (item.textContent == "App para pesquisar jogadores de fifa") {
                 cont = 2;
                 changeInfoCarrousel(cont);
             }

@@ -1,7 +1,8 @@
 const buttonToggle = document.querySelector("[data-toggle='button']");
 const menuToggle = document.querySelector("[data-toggle='menu']");
-const itemsToggle = document.querySelectorAll(".header__item");
+const itemsToggle = document.querySelectorAll(".header__item--toggle");
 const buttonContact = document.querySelector(".toggle__contact");
+
 export default function main(){
 
     buttonToggle.addEventListener("click", () => {

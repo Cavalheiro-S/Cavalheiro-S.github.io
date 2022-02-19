@@ -2,10 +2,11 @@
     display: flex;
     letter-spacing: 2px;
     position: relative;
+    justify-content: center;
     flex-direction: column;
-    padding: 0px 16px;
+    padding: 0px 160px;
     transition: transform ease 0.2s;
-    transition: background-color ease 0.5s;
+    transition: color ease 0.5s;
     width: 100%;
 
     &::before {
@@ -43,15 +44,11 @@
     }
 
     &__item {
-        padding: 16px 0px;
-        transition: ease 0.2s;
+        padding: 32px 0px;
+        transition: .2s ease all;
 
-        &:hover {
-            background-color: #e63946;
-        }
-
-        &:hover .experience__career {
-            color: white;
+        &:hover .experience__career, &:hover .experience__resume {
+            color: $secondary-color;
         }
 
     }
@@ -69,7 +66,29 @@
     }
 
     &__career {
+        text-align: center;
         font-weight: bold;
         font-size: 1.3rem;
+    }
+
+    &__resume{
+        text-align: center;
+        line-height: 32px;
+    }
+}
+
+@media all and (max-width:768px){
+
+    .experience{
+        width: 100vw;
+        padding: 0px 32px;
+
+        &__career{
+            text-align: start;
+        }
+
+        &__resume{
+            text-align: start;
+        }
     }
 }

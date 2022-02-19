@@ -1,7 +1,6 @@
 $primary-color:#1d3557;
 $secondary-color: #e63946;
 @import "./css/header/header";
-@import "./css/toggle/toggle";
 @import "./css/main/main";
 @import "./css/sections/curse/curse";
 @import "./css/sections/experience/experience";
@@ -58,10 +57,14 @@ body {
 .image {
     &__logo {
         position: relative;
-        height: 30px;
-        width: 30px;
-        margin: 5px 10px;
+        height: 32px;
+        width: 32px;
+        margin: 8px;
         transition: ease 0.2s;
+
+        &:hover{
+            transform: scale(120%);
+        }
     }
 }
 

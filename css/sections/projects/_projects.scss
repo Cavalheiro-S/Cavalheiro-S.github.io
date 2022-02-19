@@ -6,7 +6,7 @@
     &__description {
         color: #f4f4f4;
         border-radius: 0px 0px 8px 8px;
-        background-color: $primary-color;
+        background-color: #213D63;
         height: 100px;
 
         p {
@@ -28,7 +28,7 @@
     width: 80%;
 
     &__div {
-        color: $primary-color;
+        color: #213D63;
         width: 100%;
         text-align: center;
     }
@@ -49,7 +49,7 @@
         justify-content: center;
         padding: 8px;
         font-size: 1.4rem;
-        background-color: $primary-color;
+        background-color: #213D63;
         transition: .2s ease all;
 
         &:hover{
@@ -80,7 +80,7 @@
         position: absolute;
         color: white;
         font-size: 2em;
-        background-color: $primary-color;
+        background-color: #213D63;
         width: 50px;
         height: 100%;
         padding: 0px;
@@ -147,7 +147,7 @@
 
             &:hover{
 
-                background-color: $primary-color;
+                background-color: #213D63;
             }
         }
     }

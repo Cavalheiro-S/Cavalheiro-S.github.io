@@ -1,5 +1,7 @@
 .header {
   font-family: inherit;
+  position: fixed;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +63,7 @@
 
 @media all and (max-width: 768px) {
   .header {
+    position: relative;
     padding: 0%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -752,6 +755,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1016,6 +1020,18 @@
 }
 
 @media all and (max-width: 768px) {
+  .footer__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
   .footer__project {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;

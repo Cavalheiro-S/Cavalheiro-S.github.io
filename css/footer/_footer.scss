@@ -80,6 +80,13 @@
 
     .footer{
 
+        &__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
         &__project{
             grid-column: 1/4;
         }

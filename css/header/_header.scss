@@ -1,5 +1,7 @@
 .header {
     font-family: inherit;
+    position: fixed;
+    z-index: 1;
     display: flex;
     width: 100%;
     background-color: $primary-color;
@@ -52,6 +54,7 @@
 @media all and (max-width:768px){
 
     .header{
+        position: relative;
         padding: 0%;
         justify-content: center;
 

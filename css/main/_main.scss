@@ -130,10 +130,11 @@
     }
 
     .card{
-        margin: 160px 0px 80px 0px;
-        padding: 0px 32px;
+        width: 100vw;
         height: 50vh;
+        padding: 0%;
         &__info{
+            width: 100vw;
             height: 100%;
         }
 

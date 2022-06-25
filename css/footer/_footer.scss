@@ -107,26 +107,36 @@
 @media all and (max-width:768px){
 
     .footer{
+        font-size: 1.1rem;
         padding: 0;
+        grid-template-rows: 1fr 1fr 0.25fr 0.5fr;
         &__item{
             width: 100%;
             display: flex;
             align-items: center;
-            text-align: left;
+            font-size: 0.9em;
         }
 
         &__project{
-            margin: 32px 0px;
+            margin: 24px 0px;
             padding: 0px 32px;
             grid-column: 1/4;
             grid-row: 1/2;
         }
 
         &__contact{
-            margin: 32px 0px;
+            margin: 24px 0px;
             padding: 0px 32px;
             grid-column: 1/4;
             grid-row: 2/3;
+
+            ul{
+                gap: 0;
+
+                li:not(:first-child){
+                    font-size: 0.9em;
+                }
+            }
         }
     }
 

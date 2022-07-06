@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="shortcut icon" href="./img/suitcase.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body>
+    <header class="w-100">
+        <div class="icon--social">
+            <a href="https://www.instagram.com/luc.cavalheiro/">
+                <img src="./img/icon-instagram.svg" alt="ícone do instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-cavalheiro-753947186/" target="_blank">
+                <img src="./img/icon-linkedin.svg" alt="ícone do linkedin">
+            </a>
+            <a href="https://github.com/Cavalheiro-S" target="_blank">
+                <img class="h-100" src="./img/icon-github-white.svg" alt="ícone do Gihtub">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sobre
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#experience">
+                                    Experiência & Formação Acadêmica
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#knowledge">
+                                    Habilidades & Conhecimentos
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#project">
+                        Projetos
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#contact" class="contact">
+            Fale Comigo
+        </a>
+        <button id="navmenu" class="navmenu">
+            <img class="navmenu__img" src="./img/ci_menu-alt-01.png" alt="" />
+        </button>
+        <div class="navmenu__container">
+            <img class="navmenu__close" src="./img/ep_close-bold.svg" alt="">
+            <a href="#home">Início</a>
+            <a href="#experience">Experiência & Formação Acadêmica</a>
+            <a href="#knowledge">Habilidades & Conhecimentos</a>
+            <a href="#project">Projetos</a>
+        </div>
+    </header>
+    <main id="home" class="main">
+        <div class="main__content d-flex flex-column">
+            <h1 class="title--1 title__1--primary">Lucas <br> Cavalheiro</h1>
+            <h2 class="title--2 title__2--neutral">Programador Front-End</h2>
+            <p class="main__description">
+                Iniciei aprendendo lógica de programação C em 2019 por conta própria, em 2020 inicie o curso técnico
+                aprendendo inicialmente C e depois migrando para aplicações desenvolvidas em C# e com banco de dados
+                Microsoft Server. Após entrar na faculdade , em 2021 , iniciei meu estudo em javascript
+            </p>
+        </div>
+        <img class="main__img" src="./img/undraw_programming_re_kg9v 1.svg"
+            alt="Ilustração de um garoto sentado mexendo no computador">
+    </main>
+    <section id="experience" class="experience section__container">
+        <h2 class="title__2 title__2--primary">Experiência & Formação Acadêmica</h2>
+        <div class="card">
+            <div class="card__container">
+                <div class="card__icon">
+                    <img src="./img/ic_baseline-work.png" alt="Icone de uma maleta">
+                </div>
+                <div class="card__experience card__experience--left">
+                    <div class="card__title">
+                        <span class="card__title--1">Estágio de Desenvolvedor C#</span>
+                        <span class="card__title--2">AIS Automação</span>
+                        mai 2022 - o momento
+                    </div>
+                    <div class="divider"></div>
+                    <p class="card__description">
+                        Manutenção no código da aplicação Web em C# utilizando framework XAF,manutenção no código da
+                        aplicação
+                        em Xamarin,utilização do SQL Server para fazer consultas nas base de dados
+                    </p>
+                </div>
+            </div>
+            <div class="card__container">
+                <div class="card__icon">
+                    <img src="./img/ic_baseline-work.png" alt="Icone de uma maleta">
+                </div>
+                <div class="card__experience card__experience--right">
+                    <div class="card__title">
+                        <span class="card__title--1">Estágio de Suporte de Sistemas</span>
+                        <span class="card__title--2">SMP Automotive</span>
+                        mai 2021 - nov 2021
+                    </div>
+                    <div class="divider"></div>
+                    <p class="card__description">
+                        Prestava auxílio aos funcionários em problemas relacionados ao sistema, prestava auxílio a
+                        dispositivos como coletores e tablets em chão de fábrica, auxiliava os funcionários em relação a
+                        problemas de infraestrutura, apresentava a integração de T.I para novos colaboradores.
+                    </p>
+                </div>
+            </div>
+            <div class="card__container">
+                <div class="card__icon">
+                    <img src="./img/ic_baseline-work.png" alt="Icone de uma maleta">
+                </div>
+                <div class="card__experience card__experience--left">
+                    <div class="card__title">
+                        <span class="card__title--1">Auxliar de Produção</span>
+                        <span class="card__title--2">Indusparquet</span>
+                        fev 2021 - abr 2021
+                    </div>
+                    <div class="divider"></div>
+                    <p class="card__description">
+                        Participava do processo de montagem e etiquetagem das embalagens dos pisos de madeira ,abastecia
+                        os paletes com as embalagens fechadas
+                    </p>
+                </div>
+            </div>
+            <div class="card__container">
+                <div class="card__icon">
+                    <img src="./img/icon-collegeHat.svg" alt="Icone representando um capelo">
+                </div>
+                <div class="card__experience ">
+                    <div class="card__title">
+                        <span class="card__title--1">Superior de Engenharia de Software</span>
+                        <span class="card__title--2">Centro Universitário Unibrasil</span>
+                        mar 2021 - dez 2024
+                    </div>
+                    <div class="divider"></div>
+                    <p class="card__description">
+                    </p>
+                </div>
+            </div>
+            <div class="card__container">
+                <div class="card__icon">
+                    <img src="./img/icon-collegeHat.svg" alt="Icone representando um capelo">
+                </div>
+                <div class="card__experience card__experience--left">
+                    <div class="card__title">
+                        <span class="card__title--1">Técnico de desenvolvimento de sistemas 4.0</span>
+                        <span class="card__title--2">Senai Dr. Celso Charuri</span>
+                        mar 2020 - dezembro 2020
+                    </div>
+                    <div class="divider"></div>
+                    <p class="card__description">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="knowledge" class="knowledge section__container">
+        <div class="knowledge__container">
+            <div class="knowledge__container--left">
+                <h2 class="title__2 title__2--neutral">Habilidades e Conhecimentos</h2>
+                <p>
+                    Algumas das tecnologias que obtive conhecimento atráves de experiência profissional, projetos da
+                    faculdade,
+                    projetos do ensino técnico e projetos pessoais
+                </p>
+                <div class="knowledge__stats">
+                    <div class="stats">
+                        <span>Javascript</span>
+                        <div class="stats__container">
+                            <div class="stats__filled--75"></div>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <span>C#</span>
+                        <div class="stats__container">
+                            <div class="stats__filled--50"></div>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <span>Typescript</span>
+                        <div class="stats__container">
+                            <div class="stats__filled--25"></div>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <span>SQL Server</span>
+                        <div class="stats__container">
+                            <div class="stats__filled--50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="knowledge__container--right">
+                <img src="./img/undraw_percentages_re_a1ao 1.svg"
+                    alt="Ilustração de uma pessoa analisando algumas barras preenchidas">
+            </div>
+        </div>
+
+    </section>
+    <section id="project" class="project section__container">
+        <h2 class="title__2 title__2--primary">Projetos</h2>
+        <div class="swiper carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="swiper-image" src="./img/project-calculator-caloric.png" alt="">
+                    <div class="swiper-title">
+                        Calculadora de gasto calórico
+                    </div>
+                    <p class="project__description">
+                        Aplicativo Web desenvolvido com a finalidade de calcular o IMC(Índice de massa corporal) e a
+                        TMB(Taxa metabólica basal), foi desenvolvido utilizando html , css e javascript
+                    </p>
+                    <div class="project__buttons">
+                        <a href="https://github.com/Cavalheiro-S/App-gerenciador-calorico" target="_blank"
+                            class="project__button">
+                            <img src="./img/icon-github.svg" alt="">
+                            Código
+                        </a>
+                        <a href="https://www.figma.com/file/w5QxbdGVxffcoJE1NTd4Fb/Layout-GCC-Web?node-id=0%3A1"
+                            target="_blank" class="project__button">
+                            <img src="./img/icon-figma.svg" alt="">
+                            Protótipo
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-image" src="./img/project-contabilidade.png" alt="">
+                    <div class="swiper-title">
+                        Sistema de contabilidade
+                    </div>
+                    <p class="project__description">
+                        Sistema de contabilidade desenvolvido com a finalidade de registrar os dados de funcionários,
+                        clientes e seus contatos , periódicos e seus respectivos empréstimos, projeto construído utilizando C# e SQL Server
+                    </p>
+                    <div class="project__buttons">
+                        <a href="https://github.com/Angelikaandreatta/Contabilidade" target="_blank"
+                            class="project__button">
+                            <img src="./img/icon-github.svg" alt="">
+                            Código
+                        </a>
+                        <a href="https://www.figma.com/file/qR5c3DGwHNiPafugm1q3i2/Escrit%C3%B3rio-Contabilidade?node-id=0%3A1"
+                            target="_blank" class="project__button">
+                            <img src="./img/icon-figma.svg" alt="">
+                            Protótipo
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-image" src="./img/project-bot-league-of-legends.png" alt="">
+                    <div class="swiper-title">
+                        League of Legends Bot
+                    </div>
+                    <p class="project__description">
+                        É um bot que trás algumas informações do jogador conforme ele envia comandos para o canal do discord
+                    </p>
+                    <div class="project__buttons">
+                        <a href="https://github.com/Cavalheiro-S/bot-discord-statistics-lol" target="_blank"
+                            class="project__button">
+                            <img src="./img/icon-github.svg" alt="">
+                            Código
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-image" src="./img/project-instagram-screen.png" alt="">
+                    <div class="swiper-title">
+                        Tela inicial do instagram
+                    </div>
+                    <p class="project__description">
+                        Projeto construído com objetivo de replicar a interface da página inicial do instagram ,
+                        utilizando html e css
+                    </p>
+                    <div class="project__buttons">
+                        <a href="" target="_blank" class="project__button">
+                            <img src="./img/icon-github.svg" alt="">
+                            Código
+                        </a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-image" src="./img/project-investiment-expenses.png" alt="">
+                    <div class="swiper-title">
+                        Controle de despesa e investimentos
+                    </div>
+                    <p class="project__description">
+                        Projeto desenvolvido para registrar gastos e investimentos pessoais, foi utilizado React, Sass,
+                        typescript e arquitetura BEM no css
+                    </p>
+                    <div class="project__buttons">
+                        <a href="https://github.com/Cavalheiro-S/App-Controle-Financeiro" target="_blank"
+                            class="project__button">
+                            <img src="./img/icon-github.svg" alt="">
+                            Código
+                        </a>
+                        <a href="https://www.figma.com/file/GO579ElVZIEMpfJj4x4Nro/Controle-financeiro?node-id=0%3A1"
+                            target="_blank" class="project__button">
+                            <img src="./img/icon-figma.svg" alt="">
+                            Protótipo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+    <footer id="contact">
+        <h2 class="title__2 title__2--neutral">Entre em contato</h2>
+        <a href="tel:+41995126298">(41) 99512-6298</a>
+        <a href="mailto:luccribeiro53@gmail.com">luccribeiro53@gmail.com</a>
+        <div class="d-flex icon--social">
+            <a href="https://www.instagram.com/luc.cavalheiro/">
+                <img src="./img/icon-instagram.svg" alt="ícone do instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-cavalheiro-753947186/" target="_blank">
+                <img src="./img/icon-linkedin.svg" alt="ícone do linkedin">
+            </a>
+            <a href="https://github.com/Cavalheiro-S" target="_blank">
+                <img class="h-100" src="./img/icon-github-white.svg" alt="ícone do Gihtub">
+            </a>
+        </div>
+        <span>Lucas Cavalheiro © 2022</span>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
+</body>
+
+</html>

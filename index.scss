@@ -1,117 +1,354 @@
-$primary-color:#1d3557;
-$secondary-color: #e63946;
-@import "./css/header/header";
-@import "./css/toggle/toggle";
-@import "./css/main/main";
-@import "./css/sections/curse/curse";
-@import "./css/sections/experience/experience";
-@import "./css/sections/formation/formation";
-@import "./css/sections/projects/projects";
-@import "./css/footer/footer";
+$primary-color: #e63946;
+$secondary-color: #1d3557;
 
-* {
-    font-size: 20px;
-    box-sizing: border-box;
+@mixin titleSubline($color: $primary-color, $widthPercentage: 20%, $position: 7.5rem) {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: $widthPercentage;
+        bottom: -8px;
+        left: $position;
+        background-color: $color;
+    }
 }
 
-html{
-    margin: 0;
-    padding: 0%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+@import "./src/css/sass/_main";
+@import "./src/css/sass/_section-experience";
+@import "./src/css/sass/_section-knowledge";
+@import "./src/css/sass/__section-project";
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+    &::selection {
+        background-color: #e63946;
+        color: white;
+    }
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: auto;
 }
 
 body {
-    
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    font-family: "Oswald", sans-serif;
+    background-color: #f3f3f3;
+}
+
+.icon {
+    &--social {
+        display: flex;
+        justify-content: center;
+        height: 24px;
+        gap: 24px;
+    }
+
+    &--technology {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        opacity: 0.5;
+        width: 250px;
+        margin-top: 40px;
+
+        img {
+            height: 32px;
+            width: 32px;
+        }
+    }
+}
+
+.technology {
+
+    &__line--1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__line--2 {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .title {
-    display: block;
-    text-align: center;
-    font-size: 1.5em;
-    color: $secondary-color;
-    margin: 32px 0px;
-    transition: color ease 0.5s;
-    letter-spacing: 2px;
+    &__1 {
+        font-size: 1.5rem;
+        color: $primary-color;
+        text-align: center;
+        font-weight: bold;
+        margin: 20px 0px;
+        @include titleSubline();
+
+        &--primary {
+            color: $primary-color;
+        }
+
+        &--neutral {
+            color: white;
+        }
+    }
+
+    &__2 {
+        @extend .title__1;
+        font-size: 1.5rem;
+
+        &--primary {
+            color: $primary-color;
+        }
+
+        &--neutral {
+            color: white;
+        }
+    }
 }
 
-.logo {
+.title--subline {
+    @include titleSubline;
+}
+
+.section__container {
+    padding: 4rem 10rem;
+}
+
+header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-    color: white;
-    text-align: center;
-    font-size: 0.7em;
-
-    span {
-        font-size: 1em;
-    }
-}
-
-.image {
-    &__logo {
-        position: relative;
-        height: 30px;
-        width: 30px;
-        margin: 5px 10px;
-        transition: ease 0.2s;
-    }
-}
-
-.goTop {
     position: fixed;
-    display: none;
-    bottom: 0%;
-    right: 0%;
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
+    z-index: 2;
     background-color: $secondary-color;
-    transition: all ease 0.3s;
-    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10rem;
 
-    &:hover {
-        transform: translateY(-20px);
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 400px;
+            margin: 0;
+
+            li {
+                list-style: none;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: ease all 0.2s;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
     }
 
-    img {
-        display: flex;
-        height: 50%;
-        width: 50%;
-        text-decoration: none;
+    .dropdown {
+
+        &-menu {
+            background-color: white;
+            color: $secondary-color;
+        }
+
+        &-item {
+            &:hover {
+                background-color: $primary-color;
+                color: white;
+            }
+        }
+
+    }
+
+    .navmenu{
+        display: none;
+
+        &__container{
+            display: none;
+        }
+    }
+
+    .contact {
+        font-family: "Montserrat", sans-serif;
+        border: 2px solid $primary-color;
+        padding: 12px;
+        border-radius: 8px;
+        background-color: $primary-color;
         color: white;
-        transform: rotate(-90deg);
-        filter: invert(100%);
+        transition: ease all 0.2s;
+        text-decoration: none;
+
+        &:hover {
+            border: 2px solid white;
+            background-color: $secondary-color;
+
+        }
+    }
+
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $secondary-color;
+    text-align: center;
+    color: white;
+    gap: 20px;
+    padding: 40px 0px;
+
+    .title__2 {
+        width: 300px;
+        text-align: center;
+        @include titleSubline(white, 50%, 25%);
     }
 
     a {
+        color: white;
+        text-decoration: none;
+        transition: ease all 0.2s;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .section__container {
+        padding: 2rem;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .section__container {
+        padding: 2rem;
+    }
+
+    header {
+        nav {
+            display: none;
+        }
+
+        .icon--social {
+            display: none;
+        }
+
+        .navmenu{
+            display: flex;
+            background-color: inherit;
+            border: none;
+            position: relative;
+
+            &__container{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                position: absolute;
+                top:0;
+                right: 0;
+                width: 200px;
+                height: 100vh;
+                transform: translateX(100%);
+                padding: 32px 1rem;
+                transition: ease all .3s;
+                background-color: white;
+
+                a{
+                    color: $secondary-color;
+                    text-decoration: none;
+                }
+
+                &--open{
+                    transform: translateX(0);
+                }
+            }
+
+            &__close{
+                cursor: pointer;
+                height: 32px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:620px) {
+    .section__container {
+        padding: 1rem 1rem;
+    }
+
+    .icon--technology {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section__container {
+        padding: 0px 8px;
+    }
+
+    header {
         display: flex;
-        height: 100%;
-        width: 100%;
+        position: fixed;
+        height: 80px;
+        background-color: $secondary-color;
+    }
+
+    p {
+        color: $secondary-color;
+        line-height: 30px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .icon {
+        &--social {
+            gap: 24px;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        gap: 24px;
+        padding: 40px 0px;
+        background-color: $secondary-color;
+        color: white;
+
+        a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+
+            &:visited {
+                color: white;
+            }
+
+        }
+
+        span {
+            font-size: 0.8rem;
+        }
     }
 }
-
-@media all and (max-width: 768px){
-
-    html,body{
-        padding: 0%;
-        margin: 0%;
-        overflow-x: hidden;
-    }
-
-    .title{
-        margin: 16px 0px;
-    }
-}
-

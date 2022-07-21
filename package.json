@@ -1,0 +1,36 @@
+{
+  "name": "cavalheiro-s.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cavalheiro-S/Cavalheiro-S.github.io.git"
+  },
+  "author": "Lucas Cavalheiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cavalheiro-S/Cavalheiro-S.github.io/issues"
+  },
+  "homepage": "https://github.com/Cavalheiro-S/Cavalheiro-S.github.io#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-minimizer-webpack-plugin": "^3.2.3",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3",
+    "webpack-merge": "^5.8.0"
+  }
+}
